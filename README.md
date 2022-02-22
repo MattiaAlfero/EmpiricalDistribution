@@ -5,7 +5,7 @@ After importing a dataframe, and selecting the column, you need to initialize th
 
 ```
 ecdf = EmpiricalDistribution()
-ecdf.fit_transform(data)
+ecdf.fit_transform(data, columns)
 ```
 
 Then if you want to go back to the original data, or for example you have used the empirical probabilities for modelling, and you have newer ones, you can use the instantied class to go back to the values:
