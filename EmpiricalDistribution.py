@@ -2,7 +2,6 @@
 """
 Created on Tue Feb 22 19:54:04 2022
 
-@author: matti
 """
 
 import numpy as np
@@ -11,6 +10,10 @@ from tqdm import tqdm
 
  
 class EmpiricalDistribution:
+
+    """
+    Class for empirical distriution computation
+    """
 
     def __init__(self):
         self.ecdf_estimator = {}
@@ -39,3 +42,5 @@ class EmpiricalDistribution:
                     last_prob = prob
             new_data[col] = associated_value
         return new_data[self.columns].astype(self.dtype[self.columns])
+    
+    
